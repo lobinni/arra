@@ -1,0 +1,58 @@
+{
+  "product": "ARRA",
+  "network": "studionet",
+  "networkName": "GenLayer Studionet",
+  "chainId": 61999,
+  "rpc": "https://studio.genlayer.com/api",
+  "explorer": "https://explorer-studio.genlayer.com",
+  "toolchain": {
+    "cli": "0.39.1",
+    "genlayerJs": "1.1.8",
+    "genlayerTest": "0.29.2",
+    "genlayerPy": "0.16.3",
+    "genvmLinter": "0.11.0",
+    "python": "3.12",
+    "node": "22"
+  },
+  "canonicalDeployment": {
+    "version": "1.1.0-studionet",
+    "address": "0x8738E2B7660775eD3737BF2c692E6a26b5043d33",
+    "transaction": "",
+    "status": "DEPLOYED",
+    "note": "Canonical ARRA 1.1.0-studionet release on GenLayer Studionet 61999 — steward-feedback revision: inconclusive exception evidence preserves verified breach liability (UNPROVEN_FINAL), EXCEPTION_CLAIMED carries a bounded 24h adjudication deadline with permissionless timeout settlement (CLAIM_TIMEOUT_NOT_PROVEN), unused collateral only refunds after a 48h post-window reporting grace period, binding verdicts enforce causal/service/window consistency plus supportive source manifests, challenged evidence binds the frozen source family, and withdrawals pay via emitted native GEN transfers. Complete this record with the deployment transaction hash from the deployer wallet history. The production frontend resolves this address from src/lib/config.ts (env VITE_ARRA_CONTRACT overrides it).",
+    "explorerAddress": "https://explorer-studio.genlayer.com/address/0x8738E2B7660775eD3737BF2c692E6a26b5043d33",
+    "constructorArgs": [],
+    "deploymentValue": "0",
+    "source": {
+      "path": "contracts/arra.py",
+      "version": "1.1.0-studionet"
+    },
+    "getStats": {
+      "accounting_balanced": true,
+      "adjudication_grace_seconds": 86400,
+      "admin_controls": false,
+      "agreement_escrow": "0",
+      "agreements": 0,
+      "chain_id": "61999",
+      "challenge_escrow": "0",
+      "claimable": "0",
+      "finalized_breaches": 0,
+      "incidents": 0,
+      "network": "Studionet",
+      "proven_exceptions": 0,
+      "reporting_grace_seconds": 172800,
+      "rpc": "https://studio.genlayer.com/api",
+      "total_deposited": "0",
+      "version": "1.1.0-studionet",
+      "withdrawn": "0"
+    }
+  },
+  "historicalDeployments": [],
+  "productionFrontend": {
+    "url": "",
+    "contractAddress": "0x8738E2B7660775eD3737BF2c692E6a26b5043d33",
+    "chainId": 61999,
+    "hosting": "Static single-page build (Vite). Deploy on Vercel with env VITE_ARRA_CONTRACT set to the canonical address; no database, no backend, reads go straight to the Studionet gateway.",
+    "note": "Frontend address selection: VITE_ARRA_CONTRACT (build env) → src/lib/config.ts ARRA_CONTRACT fallback. Both must equal canonicalDeployment.address."
+  }
+}
